@@ -1,26 +1,30 @@
 ﻿using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour {
 
-    {
     public GameObject player;
-    public Enemy dick;
+    public GameObject enemy;
 
-        private rigidbody rb;
-        
-    [SerializeField] private int score;
+    private int score;
+    private Rigidbody rb;
 
-    private void Start()t
+    private void Start()
     {
-        
-
+        rb = GetComponent<RigidBody>();
     }
 
     private void Update()
     {
-        if (left arrrow is pressed)
+        rb.Translate(Vector3.up);
 
-        translate.
+        if(something)
+        {
+            something();
+        }
+
+        for(int i = 0; i < somethijng; i++)
+        {
+
+        }
     }
-
 }
